@@ -1,0 +1,62 @@
+{
+    "development": {
+        "DB_HOST"            : "localhost",
+		"DB_USER"            : "sa",
+		"DB_PASSWORD"        : "P@55w0rd",
+		"DB_DATABASE"        : "beaconsage",
+		"JWT_SECRET"		 : "jsg9J41c53848gjhJUEok7IQk0209gjnsjw022jg",
+		"PWD_SALT"           : "7fa73b47df808d36c5fe328546ddef8b9011b2c6",
+		"HTTPS_KEY"        	 : "key.pem",
+		"HTTPS_CERT"         : "cert.pem",
+		"USERS": {
+			"matt": {
+				"password": "helloWorld!",
+				"age": 29
+			},
+			"courtney": {
+				"password": "NodeAPIs4reCool",
+				"age": 32
+			}
+		}
+    },
+    "production": {
+        "DB_HOST"            : "localhost",
+		"DB_USER"            : "sa",
+		"DB_PASSWORD"        : "P@55w0rd",
+		"DB_DATABASE"        : "beaconsage",
+		"JWT_SECRET"		 : "jsg9J41c53848gjhJUEok7IQk0209gjnsjw022jg",
+		"PWD_SALT"           : "7fa73b47df808d36c5fe328546ddef8b9011b2c6",
+		"HTTPS_KEY"        	 : "key.pem",
+		"HTTPS_CERT"         : "cert.pem",
+		"USERS": {
+			"matt": {
+				"password": "helloWorld!",
+				"age": 29
+			},
+			"courtney": {
+				"password": "NodeAPIs4reCool",
+				"age": 32
+			}
+		}
+    },
+    "stage": {
+        "DB_HOST"            : "localhost",
+		"DB_USER"            : "sa",
+		"DB_PASSWORD"        : "P@55w0rd",
+		"DB_DATABASE"        : "beaconsage",
+		"JWT_SECRET"		 : "jsg9J41c53848gjhJUEok7IQk0209gjnsjw022jg",
+		"PWD_SALT"           : "7fa73b47df808d36c5fe328546ddef8b9011b2c6",
+		"HTTPS_KEY"        	 : "key.pem",
+		"HTTPS_CERT"         : "cert.pem",
+		"USERS": {
+			"matt": {
+				"password": "helloWorld!",
+				"age": 29
+			},
+			"courtney": {
+				"password": "NodeAPIs4reCool",
+				"age": 32
+			}
+		}
+    }
+}

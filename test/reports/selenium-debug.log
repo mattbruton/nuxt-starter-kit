@@ -1,0 +1,49 @@
+14:47:26.493 INFO - Selenium build info: version: '3.4.0', revision: 'unknown'
+14:47:26.494 INFO - Launching a standalone Selenium Server
+2017-07-19 14:47:26.512:INFO::main: Logging initialized @238ms to org.seleniumhq.jetty9.util.log.StdErrLog
+14:47:26.561 INFO - Driver provider org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
+ registration capabilities Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=, platform=WINDOWS}] does not match the current platform MAC
+14:47:26.561 INFO - Driver provider org.openqa.selenium.edge.EdgeDriver registration is skipped:
+ registration capabilities Capabilities [{browserName=MicrosoftEdge, version=, platform=WINDOWS}] does not match the current platform MAC
+14:47:26.561 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+14:47:26.562 INFO - Driver provider com.opera.core.systems.OperaDriver registration is skipped:
+Unable to create new instances on this machine.
+14:47:26.562 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+14:47:26.562 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
+2017-07-19 14:47:26.602:INFO:osjs.Server:main: jetty-9.4.3.v20170317
+2017-07-19 14:47:26.638:INFO:osjsh.ContextHandler:main: Started o.s.j.s.ServletContextHandler@14acaea5{/,null,AVAILABLE}
+2017-07-19 14:47:26.671:INFO:osjs.AbstractConnector:main: Started ServerConnector@e25b2fe{HTTP/1.1,[http/1.1]}{0.0.0.0:4444}
+2017-07-19 14:47:26.672:INFO:osjs.Server:main: Started @398ms
+14:47:26.672 INFO - Selenium Server is up and running
+14:47:26.885 INFO - SessionCleaner initialized with insideBrowserTimeout 0 and clientGoneTimeout 1800000 polling every 180000
+14:47:26.908 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, name=Test Spec, browserName=chrome, javascriptEnabled=true, platform=ANY}]])
+14:47:26.925 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, name=Test Spec, browserName=chrome, javascriptEnabled=true, platform=ANY}]
+Starting ChromeDriver 2.30.477690 (c53f4ad87510ee97b5c3425a14c0e79780cdf262) on port 27150
+Only local connections are allowed.
+14:47:28.194 INFO - Detected dialect: OSS
+14:47:28.214 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, name=Test Spec, browserName=chrome, javascriptEnabled=true, platform=ANY}]]
+14:47:28.253 INFO - Executing: [maximise window])
+14:47:28.518 INFO - Done: [maximise window]
+14:47:28.524 INFO - Executing: [get: http://google.com])
+14:47:35.077 INFO - Done: [get: http://google.com]
+14:47:35.084 INFO - Executing: [find elements: By.cssSelector: body])
+14:47:35.119 INFO - Done: [find elements: By.cssSelector: body]
+14:47:35.128 INFO - Executing: [fetching logs for: null])
+14:47:35.128 WARN - Exception thrown
+java.lang.NullPointerException: null value in entry: type=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:34)
+	at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:73)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:120)
+	at org.openqa.selenium.remote.RemoteLogs.getRemoteEntries(RemoteLogs.java:81)
+	at org.openqa.selenium.remote.RemoteLogs.get(RemoteLogs.java:77)
+	at org.openqa.selenium.remote.server.handler.GetLogHandler.call(GetLogHandler.java:43)
+	at org.openqa.selenium.remote.server.handler.GetLogHandler.call(GetLogHandler.java:31)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+14:47:35.132 WARN - Exception: null value in entry: type=null
+14:47:35.157 INFO - Executing: [delete session: 078f2097-1319-4512-b27a-a30446603449])
+14:47:35.239 INFO - Done: [delete session: 078f2097-1319-4512-b27a-a30446603449]
