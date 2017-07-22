@@ -29,6 +29,13 @@ export default {
       console.log(e);
     });
   },
+  fetch({ store, redirect }) {
+    if (!store.state.authUser) {
+      return redirect('/');
+    }
+
+    return false;
+  },
   head() {
     return {
       title: `User: ${this.user.name}`,

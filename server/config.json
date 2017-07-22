@@ -51,10 +51,12 @@
 		"USERS": {
 			"matt": {
 				"password": "helloWorld!",
+				"username": "matt",
 				"age": 29
 			},
 			"courtney": {
 				"password": "NodeAPIs4reCool",
+				"username": "courtney",
 				"age": 32
 			}
 		}
