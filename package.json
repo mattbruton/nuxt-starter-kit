@@ -24,7 +24,6 @@
     "passport": "^0.3.2",
     "passport-jwt": "^2.2.1",
     "source-map-support": "^0.4.15",
-    "vue": "^2.4.2",
     "vuex": "^2.3.1",
     "whatwg-fetch": "^2.0.3"
   },
