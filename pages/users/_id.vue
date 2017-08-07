@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import axios from '~plugins/axios.js';
+import axios from '~/plugins/axios.js';
 
 export default {
   name: 'id',

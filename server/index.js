@@ -1,4 +1,4 @@
-import Nuxt from 'nuxt'
+import { Nuxt, Builder } from 'nuxt'
 import express from 'express'
 import api from './api'
 import fs from 'fs'
@@ -53,9 +53,12 @@ app.use('/api/v1', api);
 // Start nuxt.js
 // Import and Set Nuxt.js options
 let config = require('../nuxt.config.js')
-config.dev = !(process.env.NODE_ENV === 'production')
-// Instanciate nuxt.js
 const nuxt = new Nuxt(config)
+
+config.dev = !(process.env.NODE_ENV === 'production')
+if (config.dev) {
+  new Builder(nuxt).build()
+}
 // Add nuxt.js middleware
 app.use(nuxt.render)
 var server = https.createServer(httpsOptions, app);
