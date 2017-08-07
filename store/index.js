@@ -25,7 +25,15 @@ const store = () => {
         }
       },
       login({ commit }, { username, password }) {
-        return fetch('/api/v1/login', {
+        let apiLoginURL;
+
+        if (process.env.NODE_ENV !== 'production') {
+          apiLoginURL = 'https://localhost:3001/api/v1/login';
+        } else {
+          apiLoginURL = '/api/v1/login';
+        }
+
+        return fetch(apiLoginURL, {
           credentials: 'same-origin',
           method: 'POST',
           headers: {
@@ -48,7 +56,14 @@ const store = () => {
         });
       },
       logout({ commit }) {
-        return fetch('/api/v1/logout', {
+        let apiLogoutURL;
+        if (process.env.NODE_ENV !== 'production') {
+          apiLogoutURL = 'https://localhost:3001/api/v1/logout';
+        } else {
+          apiLogoutURL = '/api/v1/logout';
+        }
+
+        return fetch(apiLogoutURL, {
           credentials: 'same-origin',
           method: 'POST',
         })

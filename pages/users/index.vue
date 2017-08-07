@@ -19,7 +19,14 @@ import axios from '~/plugins/axios.js';
 
 export default {
   async asyncData() {
-    const { data } = await axios.get('/api/v1/users');
+    let apiUsersURL;
+    if (process.env.NODE_ENV !== 'production') {
+      apiUsersURL = 'https://localhost:3001/api/v1/users';
+    } else {
+      apiUsersURL = '/api/v1/users';
+    }
+
+    const { data } = await axios.get(apiUsersURL);
     return {
       users: data,
     };

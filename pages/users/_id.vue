@@ -19,7 +19,14 @@ import axios from '~/plugins/axios.js';
 export default {
   name: 'id',
   asyncData({ params, error }) {
-    return axios.get(`/api/v1/users/${params.id}`)
+    let apiUserURL;
+    if (process.env.NODE_ENV !== 'production') {
+      apiUserURL = `https://localhost:3001/api/v1/users/${params.id}`;
+    } else {
+      apiUserURL = `/api/v1/users/${params.id}`;
+    }
+
+    return axios.get(apiUserURL)
     .then(res => (
       { user: res.data }
     ))
